@@ -1,0 +1,268 @@
+Number of vertices: 9. Number of edges: 28.
+
+0: (0 -- 7, 8) --> (0 -- 1, 4) --> NULL
+1: (1 -- 7, 11) --> (1 -- 2, 8) --> (1 -- 0, 4) --> NULL
+2: (2 -- 8, 2) --> (2 -- 5, 4) --> (2 -- 3, 7) --> (2 -- 1, 8) --> NULL
+3: (3 -- 5, 14) --> (3 -- 4, 9) --> (3 -- 2, 7) --> NULL
+4: (4 -- 5, 10) --> (4 -- 3, 9) --> NULL
+5: (5 -- 6, 2) --> (5 -- 4, 10) --> (5 -- 3, 14) --> (5 -- 2, 4) --> NULL
+6: (6 -- 8, 6) --> (6 -- 7, 1) --> (6 -- 5, 2) --> NULL
+7: (7 -- 8, 7) --> (7 -- 6, 1) --> (7 -- 1, 11) --> (7 -- 0, 8) --> NULL
+8: (8 -- 7, 7) --> (8 -- 6, 6) --> (8 -- 2, 2) --> NULL
+
+Prim's from 1 returned this MST:
+(0 -- 1, 4)
+(2 -- 1, 8)
+(8 -- 2, 2)
+(5 -- 2, 4)
+(6 -- 5, 2)
+(7 -- 6, 1)
+(3 -- 2, 7)
+(4 -- 3, 9)
+Total weight: 37
+
+Dijkstra's from 1 returned this distance tree:
+(0 -- 1, 4)
+(1 -- 1, 0)
+(2 -- 1, 8)
+(3 -- 2, 15)
+(4 -- 5, 22)
+(5 -- 2, 12)
+(6 -- 7, 12)
+(7 -- 1, 11)
+(8 -- 2, 10)
+
+getShortestPaths from 1 produced these paths:
+From vertex 0: (0 -- 1, 4) --> NULL
+From vertex 1: NULL
+From vertex 2: (2 -- 1, 8) --> NULL
+From vertex 3: (3 -- 2, 7) --> (2 -- 1, 8) --> NULL
+From vertex 4: (4 -- 5, 10) --> (5 -- 2, 4) --> (2 -- 1, 8) --> NULL
+From vertex 5: (5 -- 2, 4) --> (2 -- 1, 8) --> NULL
+From vertex 6: (6 -- 7, 1) --> (7 -- 1, 11) --> NULL
+From vertex 7: (7 -- 1, 11) --> NULL
+From vertex 8: (8 -- 2, 2) --> (2 -- 1, 8) --> NULL
+Prim's from 2 returned this MST:
+(8 -- 2, 2)
+(5 -- 2, 4)
+(6 -- 5, 2)
+(7 -- 6, 1)
+(3 -- 2, 7)
+(0 -- 7, 8)
+(1 -- 0, 4)
+(4 -- 3, 9)
+Total weight: 37
+
+Dijkstra's from 2 returned this distance tree:
+(0 -- 1, 12)
+(1 -- 2, 8)
+(2 -- 2, 0)
+(3 -- 2, 7)
+(4 -- 5, 14)
+(5 -- 2, 4)
+(6 -- 5, 6)
+(7 -- 6, 7)
+(8 -- 2, 2)
+
+getShortestPaths from 2 produced these paths:
+From vertex 0: (0 -- 1, 4) --> (1 -- 2, 8) --> NULL
+From vertex 1: (1 -- 2, 8) --> NULL
+From vertex 2: NULL
+From vertex 3: (3 -- 2, 7) --> NULL
+From vertex 4: (4 -- 5, 10) --> (5 -- 2, 4) --> NULL
+From vertex 5: (5 -- 2, 4) --> NULL
+From vertex 6: (6 -- 5, 2) --> (5 -- 2, 4) --> NULL
+From vertex 7: (7 -- 6, 1) --> (6 -- 5, 2) --> (5 -- 2, 4) --> NULL
+From vertex 8: (8 -- 2, 2) --> NULL
+Prim's from 3 returned this MST:
+(2 -- 3, 7)
+(8 -- 2, 2)
+(5 -- 2, 4)
+(6 -- 5, 2)
+(7 -- 6, 1)
+(1 -- 2, 8)
+(0 -- 1, 4)
+(4 -- 3, 9)
+Total weight: 37
+
+Dijkstra's from 3 returned this distance tree:
+(0 -- 1, 19)
+(1 -- 2, 15)
+(2 -- 3, 7)
+(3 -- 3, 0)
+(4 -- 3, 9)
+(5 -- 2, 11)
+(6 -- 5, 13)
+(7 -- 6, 14)
+(8 -- 2, 9)
+
+getShortestPaths from 3 produced these paths:
+From vertex 0: (0 -- 1, 4) --> (1 -- 2, 8) --> (2 -- 3, 7) --> NULL
+From vertex 1: (1 -- 2, 8) --> (2 -- 3, 7) --> NULL
+From vertex 2: (2 -- 3, 7) --> NULL
+From vertex 3: NULL
+From vertex 4: (4 -- 3, 9) --> NULL
+From vertex 5: (5 -- 2, 4) --> (2 -- 3, 7) --> NULL
+From vertex 6: (6 -- 5, 2) --> (5 -- 2, 4) --> (2 -- 3, 7) --> NULL
+From vertex 7: (7 -- 6, 1) --> (6 -- 5, 2) --> (5 -- 2, 4) --> (2 -- 3, 7) --> NULL
+From vertex 8: (8 -- 2, 2) --> (2 -- 3, 7) --> NULL
+Prim's from 4 returned this MST:
+(3 -- 4, 9)
+(2 -- 3, 7)
+(8 -- 2, 2)
+(5 -- 2, 4)
+(6 -- 5, 2)
+(7 -- 6, 1)
+(1 -- 2, 8)
+(0 -- 1, 4)
+Total weight: 37
+
+Dijkstra's from 4 returned this distance tree:
+(0 -- 7, 21)
+(1 -- 2, 22)
+(2 -- 5, 14)
+(3 -- 4, 9)
+(4 -- 4, 0)
+(5 -- 4, 10)
+(6 -- 5, 12)
+(7 -- 6, 13)
+(8 -- 2, 16)
+
+getShortestPaths from 4 produced these paths:
+From vertex 0: (0 -- 7, 8) --> (7 -- 6, 1) --> (6 -- 5, 2) --> (5 -- 4, 10) --> NULL
+From vertex 1: (1 -- 2, 8) --> (2 -- 5, 4) --> (5 -- 4, 10) --> NULL
+From vertex 2: (2 -- 5, 4) --> (5 -- 4, 10) --> NULL
+From vertex 3: (3 -- 4, 9) --> NULL
+From vertex 4: NULL
+From vertex 5: (5 -- 4, 10) --> NULL
+From vertex 6: (6 -- 5, 2) --> (5 -- 4, 10) --> NULL
+From vertex 7: (7 -- 6, 1) --> (6 -- 5, 2) --> (5 -- 4, 10) --> NULL
+From vertex 8: (8 -- 2, 2) --> (2 -- 5, 4) --> (5 -- 4, 10) --> NULL
+Prim's from 5 returned this MST:
+(6 -- 5, 2)
+(7 -- 6, 1)
+(2 -- 5, 4)
+(8 -- 2, 2)
+(3 -- 2, 7)
+(1 -- 2, 8)
+(0 -- 1, 4)
+(4 -- 3, 9)
+Total weight: 37
+
+Dijkstra's from 5 returned this distance tree:
+(0 -- 7, 11)
+(1 -- 2, 12)
+(2 -- 5, 4)
+(3 -- 2, 11)
+(4 -- 5, 10)
+(5 -- 5, 0)
+(6 -- 5, 2)
+(7 -- 6, 3)
+(8 -- 2, 6)
+
+getShortestPaths from 5 produced these paths:
+From vertex 0: (0 -- 7, 8) --> (7 -- 6, 1) --> (6 -- 5, 2) --> NULL
+From vertex 1: (1 -- 2, 8) --> (2 -- 5, 4) --> NULL
+From vertex 2: (2 -- 5, 4) --> NULL
+From vertex 3: (3 -- 2, 7) --> (2 -- 5, 4) --> NULL
+From vertex 4: (4 -- 5, 10) --> NULL
+From vertex 5: NULL
+From vertex 6: (6 -- 5, 2) --> NULL
+From vertex 7: (7 -- 6, 1) --> (6 -- 5, 2) --> NULL
+From vertex 8: (8 -- 2, 2) --> (2 -- 5, 4) --> NULL
+Prim's from 6 returned this MST:
+(7 -- 6, 1)
+(5 -- 6, 2)
+(2 -- 5, 4)
+(8 -- 2, 2)
+(3 -- 2, 7)
+(1 -- 2, 8)
+(0 -- 1, 4)
+(4 -- 3, 9)
+Total weight: 37
+
+Dijkstra's from 6 returned this distance tree:
+(0 -- 7, 9)
+(1 -- 7, 12)
+(2 -- 5, 6)
+(3 -- 2, 13)
+(4 -- 5, 12)
+(5 -- 6, 2)
+(6 -- 6, 0)
+(7 -- 6, 1)
+(8 -- 6, 6)
+
+getShortestPaths from 6 produced these paths:
+From vertex 0: (0 -- 7, 8) --> (7 -- 6, 1) --> NULL
+From vertex 1: (1 -- 7, 11) --> (7 -- 6, 1) --> NULL
+From vertex 2: (2 -- 5, 4) --> (5 -- 6, 2) --> NULL
+From vertex 3: (3 -- 2, 7) --> (2 -- 5, 4) --> (5 -- 6, 2) --> NULL
+From vertex 4: (4 -- 5, 10) --> (5 -- 6, 2) --> NULL
+From vertex 5: (5 -- 6, 2) --> NULL
+From vertex 6: NULL
+From vertex 7: (7 -- 6, 1) --> NULL
+From vertex 8: (8 -- 6, 6) --> NULL
+Prim's from 7 returned this MST:
+(6 -- 7, 1)
+(5 -- 6, 2)
+(2 -- 5, 4)
+(8 -- 2, 2)
+(3 -- 2, 7)
+(1 -- 2, 8)
+(0 -- 1, 4)
+(4 -- 3, 9)
+Total weight: 37
+
+Dijkstra's from 7 returned this distance tree:
+(0 -- 7, 8)
+(1 -- 7, 11)
+(2 -- 5, 7)
+(3 -- 2, 14)
+(4 -- 5, 13)
+(5 -- 6, 3)
+(6 -- 7, 1)
+(7 -- 7, 0)
+(8 -- 7, 7)
+
+getShortestPaths from 7 produced these paths:
+From vertex 0: (0 -- 7, 8) --> NULL
+From vertex 1: (1 -- 7, 11) --> NULL
+From vertex 2: (2 -- 5, 4) --> (5 -- 6, 2) --> (6 -- 7, 1) --> NULL
+From vertex 3: (3 -- 2, 7) --> (2 -- 5, 4) --> (5 -- 6, 2) --> (6 -- 7, 1) --> NULL
+From vertex 4: (4 -- 5, 10) --> (5 -- 6, 2) --> (6 -- 7, 1) --> NULL
+From vertex 5: (5 -- 6, 2) --> (6 -- 7, 1) --> NULL
+From vertex 6: (6 -- 7, 1) --> NULL
+From vertex 7: NULL
+From vertex 8: (8 -- 7, 7) --> NULL
+Prim's from 8 returned this MST:
+(2 -- 8, 2)
+(5 -- 2, 4)
+(6 -- 5, 2)
+(7 -- 6, 1)
+(3 -- 2, 7)
+(0 -- 7, 8)
+(1 -- 0, 4)
+(4 -- 3, 9)
+Total weight: 37
+
+Dijkstra's from 8 returned this distance tree:
+(0 -- 1, 14)
+(1 -- 2, 10)
+(2 -- 8, 2)
+(3 -- 2, 9)
+(4 -- 5, 16)
+(5 -- 2, 6)
+(6 -- 8, 6)
+(7 -- 8, 7)
+(8 -- 8, 0)
+
+getShortestPaths from 8 produced these paths:
+From vertex 0: (0 -- 1, 4) --> (1 -- 2, 8) --> (2 -- 8, 2) --> NULL
+From vertex 1: (1 -- 2, 8) --> (2 -- 8, 2) --> NULL
+From vertex 2: (2 -- 8, 2) --> NULL
+From vertex 3: (3 -- 2, 7) --> (2 -- 8, 2) --> NULL
+From vertex 4: (4 -- 5, 10) --> (5 -- 2, 4) --> (2 -- 8, 2) --> NULL
+From vertex 5: (5 -- 2, 4) --> (2 -- 8, 2) --> NULL
+From vertex 6: (6 -- 8, 6) --> NULL
+From vertex 7: (7 -- 8, 7) --> NULL
+From vertex 8: NULL
